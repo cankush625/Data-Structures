@@ -19,3 +19,16 @@ public class Insertion_Sort {
         }
     }
 }
+
+/*
+Sorted elements are :
+2
+3
+5
+6
+8
+10
+43
+*/
+
+//By Ankush Chavan
