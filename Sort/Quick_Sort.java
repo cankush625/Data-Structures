@@ -48,6 +48,10 @@ public class Quick_Sort {
 }
 
 /*
-    Output :
-        [I@13b6d03
+Output :
+2
+5
+3
+9
+7
 */

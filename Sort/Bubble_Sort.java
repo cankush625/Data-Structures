@@ -27,5 +27,9 @@ public class Bubble_Sort{
 
 /*
 Output :
-[I@73035e27
+2
+3
+5
+7
+9
 */
