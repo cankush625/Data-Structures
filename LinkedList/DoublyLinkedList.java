@@ -37,6 +37,32 @@ public class DoublyLinkedList {
         current.next.prev = current;
     }
 
+    private static void prepend(node head, int data){
+        node newHead = new node(data);
+        newHead.next = head;
+        head = newHead;
+    }
+
+    private static void deleteNode(node head, int data){
+        node current = head;
+        if (head == null){
+            return;
+        }
+
+        if (head.data == data){
+            head = head.next;
+            return;
+        }
+        while(current.next != null){
+            if (current.next.data == data){
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+            current.prev = current.prev.prev; //not sure if this is right
+        }
+    }
+
     public static void main(String[] args){
         node head = new node(2);
         node nodeB = new node(3);
@@ -71,14 +97,14 @@ public class DoublyLinkedList {
                     int headVal;
                     System.out.println("Enter the data to be insert");
                     headVal = scanner.nextInt();
-                    //prepend(head, headVal);
+                    prepend(head, headVal);
                     System.out.println(headVal + " added to the head successfully!");
                     break;
                 case 3:
                     int delVal;
                     System.out.println("Enter the data to be delete");
                     delVal = scanner.nextInt();
-                    //deleteNode(head, delVal);
+                    deleteNode(head, delVal);
                     System.out.println(delVal + " deleted successfully!");
                     break;
                 case 4:
