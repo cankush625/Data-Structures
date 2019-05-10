@@ -67,4 +67,26 @@ class BinarySearchTree {
         tree.inorder();
     }
 }
+
+//Output :
+/*
+  Enter number of nodes :
+        7
+        Enter data :
+        60
+        20
+        40
+        30
+        70
+        90
+        80
+        20
+        30
+        40
+        60
+        70
+        80
+        90
+*/
+
 //by Ankush Chavan
