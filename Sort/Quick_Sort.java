@@ -4,11 +4,11 @@ public class Quick_Sort {
 //    }
 
     public static void quickSort(int[]  array, int left, int right){
-        if(left <= right){
+        if(left >= right){
             return;
         }
 
-        int pivot = (left + right)/2;
+        int pivot = array[(left + right)/2];
         int index = partition(array, left, right, pivot);
         quickSort(array, left, index - 1 );
         quickSort(array, index, right);
@@ -43,7 +43,9 @@ public class Quick_Sort {
     public static void main(String[] args){
         int[] array = {2, 5, 3, 9, 7};
         quickSort(array, 0, array.length - 1);
-        System.out.println(array);
+        for(int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
 
@@ -55,5 +57,3 @@ Output :
 9
 7
 */
-
-//By Ankush Chavan
