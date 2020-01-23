@@ -30,7 +30,7 @@ public class Quick_Sort {
                 right--;
             }
         }
-        return left;
+        return right;
     }
 
     public static void swap(int[] array, int left, int right){
